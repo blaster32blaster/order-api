@@ -1,0 +1,73 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+#header-row{
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: space-between!important;
+}
+
+#add-button {
+    color: #ffffff;
+    background-color: cornflowerblue;
+}
+#add-button:hover {
+    background-color: blueviolet;
+}
+
+.update-button {
+    color: #000000;
+    background-color: wheat;
+}
+.update-button:hover {
+    background-color: yellow;
+}
+
+.delete-button {
+    color: #ffffff;
+    background-color: maroon;
+}
+.delete-button:hover {
+    background-color: red;
+}
+
+.order-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-fields-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.form-fields-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.order-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.order-display-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

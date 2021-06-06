@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::resource('technicians', App\Http\Controllers\Api\TechnicianController::class)
+    ->only('index');
+
+Route::resource('keys', App\Http\Controllers\Api\KeyController::class)
+    ->only('index');
+
+Route::resource('orders', App\Http\Controllers\Api\OrderController::class);;
